@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Flow | Web Productivity Companion </title>
+    <link rel="stylesheet" href="styl.css">
+    <script defer src="jscr.js"></script>
+</head>
+<body>
+     <h1 class="title">Zen Flow</h1>
+     <div class="main"></div>
+
+     <div class="all-tsk">
+        <h2 class="tsk-list-title">Catalogues</h2>
+        <ul class="tsk-list" data-lists></ul>
+
+        <form action="" data-new-list-form >
+            <input data-new-list-input type="text" class="new list" placeholder="Catalogue Name" aria-label="name your catalogue">
+            <button class="btn create" aria-label="create new Catalogue">+</button>
+        </form>
+
+     </div>
+     <div class="todos" data-list-display-cnt>
+        <div class="todo-header">
+            <h2 class="list-title" data-list-title> </h2>
+            <p class="tsk-cnt" data-list-count> </p>
+        </div>
+
+        <div class="todo-body">
+            <div class="tasks" data-tasks></div>
+
+
+            <div class="add-new">
+
+                <form action="" data-new-task-form>
+                    <input data-new-task-input type="text" class="new task" placeholder="Add your Task" aria-label="name your catalogue">
+                    <button class="btn create" aria-label="create new Task">+</button>
+                </form>
+
+
+            </div>
+
+
+            <div class="del-tsk">
+                <button class="btn del" data-clear-complete-tasks-btn> Clear checked tasks </button>
+                <button class="btn del" data-delete-list-btn > Delete Catalogue </button>
+            </div>
+
+
+        </div>
+
+    </div>
+  <template id ="task-temp">
+        <div class="task">
+          <input type="checkbox" />
+          <label>
+              <span class="custom-check"></span>
+          </label>
+        </div>
+  </template>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* Media query for screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+    /* Add your responsive styles for smaller screens here */
+    body {
+      font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+    .main {
+      display: none; /* Hide the main element on smaller screens */
+    }
+    .title {
+      font-size: 4rem; /* Adjust the title font size for smaller screens */
+    }
+  }
+  
+  /* Media query for screens between 769px and 1024px (e.g., tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Add your responsive styles for medium-sized screens here */
+    body {
+      font-size: 30px; /* Adjust the font size for medium-sized screens */
+    }
+    .main {
+      height: 2px; /* Adjust the height of the main element for medium-sized screens */
+      width: 2px; /* Adjust the width of the main element for medium-sized screens */
+    }
+    .title {
+      font-size: 5rem; /* Adjust the title font size for medium-sized screens */
+    }
+  }
+  
+  /* Media query for screens larger than 1024px (e.g., desktops) */
+  @media (min-width: 1025px) {
+    /* Add your responsive styles for larger screens here */
+    body {
+      font-size: 40px; /* Reset the font size to the original value for larger screens */
+    }
+    .main {
+      height: 1px; /* Reset the height of the main element to the original value for larger screens */
+      width: 1px; /* Reset the width of the main element to the original value for larger screens */
+    }
+    .title {
+      font-size: calc(7vw + 2rem); /* Reset the title font size to the original value for larger screens */
+    }
+  }
+  
