@@ -70,7 +70,7 @@ animation: zoom 16s alternate infinite;
   cursor: pointer;
 }
 .list-name:hover{
-  opacity: 0.7;
+  opacity: 0.8;
   color: #7F96FF;
   transition: 0.5s ease-in-out;
 }
@@ -87,6 +87,7 @@ form{
   background: 0;
   border: 0;
   color: inherit;
+  
 
 }
 .btn.create{
@@ -118,7 +119,8 @@ form{
   border-bottom-width: 3px;
 }
 .new:focus::placeholder{
-  opacity: 0.9;
+  opacity: 0.5;
+  color: #fff;
 }
 .new.list{
   font-size: 1.1rem;
@@ -132,12 +134,12 @@ form{
 }
 .btn.del{
 opacity: 0.7;
-font-size: 1rem;
+font-size: 1.5rem;
 
 }
 .btn.del:hover{
   opacity: 0.7;
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #ED6A5E;
   transition: color 200ms;
 }
@@ -151,6 +153,7 @@ font-size: 1rem;
 
   grid-area: active;
   background-color: white;
+  border-radius: 30px;
   color: #7F96FF;
   grid-area: active;
 
